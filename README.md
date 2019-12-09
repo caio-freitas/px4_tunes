@@ -2,16 +2,23 @@
 Tune library for PX4 compatible vehicles
 ## How to use
 * Go to your `Firmware/boards/...` directory ( in case of a fmu_v2, `Firmware/boards/px4/fmu-v2` )
-
+Example: `cd ~/src/Firmware/boards/px4/fmu-v2`
 * Open the desired `cmake` file
+Example: `gedit multicopter.cmake`
 
 * Enable the `tone alarm` driver (and `tune_control` systemcmd, for testing)
+(remove hashtag in front of lines, uncomment)
 
 * Open /Firmware/src/lib/tunes/tune_definition.desc file
-
 It will show you all default tunes, take a look and check out the patterns
 
-Those are the rules for the musical expressions, according to PX4
+* Copy and paste the `tune_definition.desc` file above, replacing the previous
+
+* Build firmware and upload with `make [firmware_version] upload`
+Example: `make px4_fmu-v2_multicopter upload` to build the multicopter version
+
+
+### Those are the rules for the musical expressions, according to PX4
 /**
  * Driver for the PX4 audio .
  *
