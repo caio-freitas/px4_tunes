@@ -85,7 +85,7 @@
 
 //           ordinal name                  tune                                        interruptable*     hint
 //  * Repeated tunes should always be defined as interruptable, if not an explict 'tone_control stop' is needed
-PX4_DEFINE_TUNE(0,  CUSTOM,                "MBT200 L1A L2A L4A L4A L1A L2 O5C L1 C B L2 B A A G# L1A",    true  /*  empty to align with the index */)
+PX4_DEFINE_TUNE(0,  CUSTOM,                "",  true  /*align index*/)
 PX4_DEFINE_TUNE(1,  STARTUP,               "MFT240L8 O4aO5dc O4aO5dc O4aO5dc L16dcdcdcdc",  true  /*  startup tune */)
 PX4_DEFINE_TUNE(2,  ERROR_TUNE,            "MBT200a8a8a8PaaaP",                             true  /*  ERROR tone */)
 PX4_DEFINE_TUNE(3,  NOTIFY_POSITIVE,       "MFT200e8a8a",                                   true  /*  Notify Positive tone */)
@@ -106,3 +106,8 @@ PX4_DEFINE_TUNE(17, SD_ERROR,              "MNBG",                              
 PX4_DEFINE_TUNE(18, PROG_PX4IO,            "MLL32CP8MB",                                    false /*  Program PX4IO */)
 PX4_DEFINE_TUNE(19, PROG_PX4IO_OK,         "MLL8CDE",                                       false /*  Program PX4IO success */)
 PX4_DEFINE_TUNE(20, PROG_PX4IO_ERR,        "ML<<CP4CP4CP4CP4CP4",                           true  /*  Program PX4IO fail */)
+PX4_DEFINE_TUNE(21, FUNERAL_MARCH,"MFT200 L1A L2A L4A L4A L1A L2 O5C L1 C B L2 B A A G# L1A",true  /* Chopin's Funeral March */)
+PX4_DEFINE_TUNE(22, MARIO_MUSHROOM,"MFT240 L8 O4cO4gO5eO5cO5dO5g",true  /* Mario Bros' Mushroom Tune */)
+PX4_DEFINE_TUNE(22, MARIO_COIN, "MFT240 L8 O4b L4O5e", true  /* Mario Bros' Coin Tune */)
+
+
